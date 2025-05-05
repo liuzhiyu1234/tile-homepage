@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "自定义新标签页",
+    "version": "1.0",
+    "description": "替换默认新标签页为自定义页面",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
